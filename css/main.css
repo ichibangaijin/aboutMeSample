@@ -1,0 +1,118 @@
+html {
+  height: 100%;
+  min-height: 800px;
+  background-image: url(../images/Unknown.jpg);
+  background-size: cover;
+  background-position: 80% top;
+  background-repeat: no-repeat;
+  position: relative; }
+
+header {
+  margin-left: 40px;
+  margin-top: 20px;
+  vertical-align: top; }
+  header img {
+    width: 120px; }
+  header p {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    color: white;
+    font-family: arial, sans-serif; }
+  @media (max-width: 580px) {
+    header {
+      margin-left: 10px;
+      margin-top: 20px; } }
+
+section {
+  margin-left: 40px; }
+  @media (max-width: 580px) {
+    section {
+      margin-left: 10px;
+      margin-top: 280px; } }
+  section h1 {
+    font-family: sans-serif;
+    font-size: 50px;
+    color: white;
+    margin-top: 90px;
+    margin-bottom: 20px; }
+    @media (max-width: 580px) {
+      section h1 {
+        font-size: 35px; } }
+  section h3 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    width: 500px;
+    line-height: 1.5; }
+    @media (max-width: 580px) {
+      section h3 {
+        font-size: 16px;
+        width: 95%;
+        margin-bottom: 20px; } }
+  section input {
+    display: inline-block;
+    width: 240px;
+    height: 36px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-top: 20px;
+    border-radius: 3px; }
+    @media (max-width: 580px) {
+      section input {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 15px; } }
+  section p {
+    color: white;
+    margin-top: 40px; }
+    @media (max-width: 580px) {
+      section p {
+        display: inline-block;
+        width: 90%;
+        margin-bottom: 10px;
+        font-size: 14px; } }
+  section div {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    margin-right: 20px; }
+    section div input[type=button] {
+      color: gray;
+      position: relative; }
+    section div i {
+      position: absolute;
+      left: 10px;
+      top: 25px;
+      font-size: 30px;
+      color: gray; }
+      @media (max-width: 580px) {
+        section div i {
+          top: 5px; } }
+  section input[type=button] {
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: #0077b3;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+    border: none; }
+    section input[type=button].links {
+      background-color: rgba(0, 0, 0, 0.2); }
+  section .email {
+    display: block;
+    width: 500px; }
+    @media (max-width: 580px) {
+      section .email {
+        display: inline-block;
+        width: 95% 777; } }
+
+footer {
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  right: 20px; }
+  @media (max-width: 580px) {
+    footer {
+      display: none; } }
