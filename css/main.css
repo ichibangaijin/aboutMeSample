@@ -106,7 +106,7 @@ section {
     @media (max-width: 580px) {
       section .email {
         display: inline-block;
-        width: 95% 777; } }
+        width: 95%; } }
 
 footer {
   color: white;
