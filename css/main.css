@@ -30,16 +30,19 @@ section {
       margin-left: 10px;
       margin-top: 280px; } }
   section h1 {
-    font-family: sans-serif;
+    font-family: helvetica, sans-serif;
     font-size: 50px;
     color: white;
     margin-top: 90px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 50px black;
+    font-weight: 700; }
     @media (max-width: 580px) {
       section h1 {
         font-size: 35px; } }
   section h3 {
     color: white;
+    text-shadow: 0px 0px 50px black;
     font-family: sans-serif;
     font-size: 20px;
     width: 500px;
@@ -60,8 +63,11 @@ section {
     @media (max-width: 580px) {
       section input {
         width: 95%;
-        margin: auto;
-        margin-bottom: 15px; } }
+        margin-left: 0px;
+        margin-bottom: 15px; }
+        section input .button {
+          margin-left: 0px;
+          width: 95%; } }
   section p {
     color: white;
     margin-top: 40px; }
@@ -76,29 +82,34 @@ section {
     position: relative;
     width: 150px;
     height: 40px;
-    margin-right: 20px; }
-    section div input[type=button] {
-      color: gray;
-      position: relative; }
+    margin-right: 20px;
+    color: #a19fab; }
+    section div:hover {
+      color: white; }
     section div i {
       position: absolute;
       left: 10px;
       top: 25px;
-      font-size: 30px;
-      color: gray; }
+      font-size: 30px; }
       @media (max-width: 580px) {
         section div i {
           top: 5px; } }
+    section div input.links {
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.2);
+      color: gray; }
+      section div input.links:hover {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.4); }
   section input[type=button] {
     width: 150px;
     height: 40px;
     color: white;
     background-color: #0077b3;
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
     border-radius: 2px;
     border: none; }
-    section input[type=button].links {
-      background-color: rgba(0, 0, 0, 0.2); }
+    section input[type=button]:hover {
+      background-color: #3277b3; }
   section .email {
     display: block;
     width: 500px; }
