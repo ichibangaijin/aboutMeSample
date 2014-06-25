@@ -1,10 +1,15 @@
 html {
   height: 100%;
+  min-height: 100%;
   background-image: url(../images/Unknown.jpg);
   background-size: cover;
   background-position: 80% top;
-  background-repeat: no-repeat;
-  position: relative; }
+  background-repeat: no-repeat; }
+  @media (max-width: 500px) {
+    html {
+      position: fixed;
+      top: 0px;
+      left: 0px; } }
 
 header {
   margin-left: 40px;
@@ -18,14 +23,14 @@ header {
     top: 25px;
     color: white;
     font-family: arial, sans-serif; }
-  @media (max-width: 580px) {
+  @media (max-width: 500px) {
     header {
       margin-left: 10px;
       margin-top: 20px; } }
 
 section {
   margin-left: 40px; }
-  @media (max-width: 580px) {
+  @media (max-width: 500px) {
     section {
       margin-left: 10px;
       margin-top: 280px; } }
@@ -37,7 +42,7 @@ section {
     margin-bottom: 20px;
     text-shadow: 0px 0px 50px black;
     font-weight: 700; }
-    @media (max-width: 580px) {
+    @media (max-width: 500px) {
       section h1 {
         font-size: 35px; } }
   section h3 {
@@ -47,7 +52,7 @@ section {
     font-size: 20px;
     width: 500px;
     line-height: 1.5; }
-    @media (max-width: 580px) {
+    @media (max-width: 500px) {
       section h3 {
         font-size: 16px;
         width: 95%;
@@ -60,7 +65,7 @@ section {
     margin-right: 10px;
     margin-top: 20px;
     border-radius: 3px; }
-    @media (max-width: 580px) {
+    @media (max-width: 500px) {
       section input {
         width: 95%;
         margin-left: 0px;
@@ -71,7 +76,7 @@ section {
   section p {
     color: white;
     margin-top: 40px; }
-    @media (max-width: 580px) {
+    @media (max-width: 500px) {
       section p {
         display: inline-block;
         width: 90%;
@@ -91,7 +96,7 @@ section {
       left: 10px;
       top: 25px;
       font-size: 30px; }
-      @media (max-width: 580px) {
+      @media (max-width: 500px) {
         section div i {
           top: 5px; } }
     section div input.links {
@@ -113,7 +118,7 @@ section {
   section .email {
     display: block;
     width: 500px; }
-    @media (max-width: 580px) {
+    @media (max-width: 500px) {
       section .email {
         display: inline-block;
         width: 95%; } }
@@ -123,6 +128,6 @@ footer {
   position: absolute;
   bottom: 20px;
   right: 20px; }
-  @media (max-width: 580px) {
+  @media (max-width: 500px) {
     footer {
       display: none; } }
