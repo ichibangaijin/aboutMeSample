@@ -95,6 +95,10 @@ img.logo {
 .page-description {
   width: 500px;
   margin-top: 30px; }
+  @media (max-width: 500px) {
+    .page-description {
+      width: 95%;
+      margin: 0px; } }
 
 .name-text,
 .email-text {
