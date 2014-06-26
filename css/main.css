@@ -2,9 +2,11 @@
   outline: solid 1px red; }
 
 /***** Base Styles*******/
+h1, h2, p {
+  color: white; }
+
 h1 {
-  color: white;
-  font-family: helvetica, sans-serif;
+  font-family: "Arial Narrow", Arial, sans-serif;
   font-size: 50px;
   text-shadow: 0px 0px 50px black; }
   @media (max-width: 500px) {
@@ -12,9 +14,8 @@ h1 {
       font-size: 35px; } }
 
 h2 {
-  color: white;
   text-shadow: 0px 0px 50px black;
-  font-family: sans-serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 20px;
   line-height: 1.5; }
   @media (max-width: 500px) {
@@ -22,21 +23,22 @@ h2 {
       font-size: 16px; } }
 
 p {
-  color: white;
-  font-family: arial, sans-serif; }
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 input {
   font-size: 16px;
   border-radius: 3px; }
 
-input[type=button] {
+button {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
   width: 150px;
   height: 40px;
   color: white;
   background-color: #0077b3;
   border-radius: 2px;
   border: none; }
-  input[type=button]:hover {
+  button:hover {
     background-color: #3277b3; }
 
 /***** Layout Styles*******/
@@ -107,7 +109,8 @@ img.logo {
       margin-bottom: 10px; } }
 
 .email-text {
-  margin-top: 10px; }
+  margin-top: 10px;
+  width: 500px; }
 
 .join-button {
   margin-top: 10px;
@@ -115,10 +118,25 @@ img.logo {
 
 .facebook,
 .twitter {
-  margin-top: 10px; }
+  margin-top: 10px;
+  background-color: gray; }
+  .facebook:hover,
+  .twitter:hover {
+    background-color: red; }
 
-.twitter {
-  margin-left: 10px; }
+.facebook {
+  margin-left: 20px; }
+  .facebook:before {
+    font-family: 'FontAwesome';
+    content: "\f09a";
+    font-size: 20px;
+    margin-right: 10px; }
+
+.twitter:before {
+  font-family: 'FontAwesome';
+  content: "\f0c4";
+  font-size: 20px;
+  margin-right: 10px; }
 
 /***** State Styles*******/
 /***** Theme Styles*******/

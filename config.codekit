@@ -36,6 +36,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/glyphicons_social_31_twitter.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1370,
+		"inputAbbreviatedPath": "\/images\/glyphicons_social_31_twitter.png",
+		"outputAbbreviatedPath": "\/images\/glyphicons_social_31_twitter.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/Unknown.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
