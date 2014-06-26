@@ -1,138 +1,40 @@
-
-
-html {
-
-	height:100%;
-	min-height:100%;
-	background-image: url(../images/Unknown.jpg);
-	background-size:cover;
-	background-position:80% top;
-	background-repeat: no-repeat;
-	@media (max-width: 500px){
-		position:absolute;
-		top:0px;
-		left:0px;
-		height:auto;
-		background-size: cover;
-		}
-	
+*{
+	outline:solid 1px red;
 }
 
-
-header {
-	margin-left: 40px;
-	margin-top: 20px;
-	vertical-align: top;
-	img{
-		width:120px;
-	}
-	p {
-		position:absolute;
-		right: 20px;
-		top:25px;
-		color:white;
-		font-family:arial, sans-serif;
-	}
-	@media(max-width:500px){
-		margin-left:10px;
-		margin-top: 20px;
-	}
-}
-
-section {
-	margin-left:40px;
-	@media(max-width: 500px){
-		margin-left: 10px;
-		margin-top: 250px;
-	}
-	h1 {
-		font-family:helvetica, sans-serif;
-		font-size: 50px;
-		color:white;
-		margin-top: 90px;
-		margin-bottom: 20px;
-		text-shadow: 0px 0px 50px black;
-		font-weight: 700;
+/***** Base Styles*******/
+h1 {
+	color:white;
+	font-family:helvetica, sans-serif;
+	font-size: 50px;
+	text-shadow: 0px 0px 50px black;
 		@media(max-width: 500px){
 			font-size: 35px;
 		}
 	}
-	h3 {
-		color:white;
-		text-shadow: 0px 0px 50px black;
-		font-family:sans-serif;
-		font-size: 20px;
-		width: 500px;
-		line-height: 1.5;
+
+h2 {
+	color:white;
+	text-shadow: 0px 0px 50px black;
+	font-family:sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
 		@media(max-width: 500px){
 			font-size: 16px;
-			width: 95%;
-			margin-bottom: 20px;
 		}
 	}
-	input {
-		display:inline-block;
-		width:240px;
-		height:36px;
-		font-size: 16px;
-		margin-right:10px;
-		margin-top: 20px;
-		border-radius:3px;
-		@media(max-width: 500px){
-			width: 95%;
-			margin-left:0px;
-			margin-bottom:10px;
-		.button{
-			margin-left:0px;
-			width: 95%;
-		}
 
-		}
+p {
+	color:white;
+	font-family:arial, sans-serif;
 	}
-	
-	
-	p {
-		color:white;
-		margin-top: 40px;
-		@media(max-width: 500px){
-			display:inline-block;
-			width:90%;
-			margin-bottom:5px;
-			font-size: 14px;
-			margin-top: 0px;
-		}
-	}
-	div {
-		display:inline-block;
-		position:relative;
-		width:150px;
-		height:40px;
-		margin-right: 20px;
-		color:#a19fab;
-		&:hover{
-			color:white;
-		}
-		i {
-			position:absolute;
-			left: 10px;
-			top:25px;
-			font-size: 30px;
-			
-		}
-		input.links{
-			position:relative;
-			background-color: rgba(0,0,0,0.2);
-			color:gray;
-			&:hover{
-				color:white;
-				background-color: rgba(0,0,0,0.4)
 
-			}
-		}
-	
+input {
+	font-size: 16px;
+	border-radius:3px;
 	}
-	
-	input[type=button]{
+
+input[type=button]{
 	
 		width: 150px;
 		height:40px;
@@ -143,27 +45,127 @@ section {
 		&:hover{
 			background-color: rgb(50, 119, 179);
 		}
-	}
+	}		
 
-	.email {
-		display:block;
-		width: 500px;
-		@media(max-width: 500px){
-			display:inline-block;
-			width: 95%;
+/***** Layout Styles*******/
+
+html {
+	height:100%;
+	min-height:100%;
+	position:relative;
+}
+
+header {
+	margin-left: 40px;
+	margin-top: 20px;
+	vertical-align: top;
+	@media(max-width:500px){
+		margin-left:10px;
+		margin-top: 20px;
 		}
 	}
 
+
+section {
+	margin-left:40px;
+	@media(max-width: 500px){
+		margin-left: 10px;
+		margin-top: 250px;
+		}
+	}	
 	
-}
+
+
 footer {
-		color:white;
 		position:absolute;
 		bottom:20px;
 		right:20px;
-		@media(max-width: 500px){
-			display:none;
-		}
 	}
+
+
+/***** Module Styles*******/
+
+img.logo{
+		width:120px;
+	}
+
+.float-right{
+	display:inline-block;
+	float:right;
+	clear:right;
+	margin-right: 20px;
+	margin-top: 5px;
+}
+
+.float-left{
+	display:block;
+	clear:left;
+	float:left;
+}
+
+.no-clear-float-left{
+	display:inline-block;
+	float:left;
+}
+
+.page-title {
+	margin-top: 150px;
+}
+
+.page-description {
+	width: 500px;
+	margin-top: 30px;
+}
+
+.name-text, 
+.email-text {
+	margin-right: 10px;
+	display:inline-block;
+	width:240px;
+	height:36px;
+	@media(max-width: 500px){
+		width: 95%;
+		margin-left:0px;
+		margin-bottom:10px;
+	}
+}
+
+.email-text {
+	margin-top: 10px;
+}
+
+.join-button {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.facebook,
+.twitter{
+	margin-top: 10px;
+}
+
+.twitter {
+	margin-left: 10px;
+}
+
+/***** State Styles*******/
+
+/***** Theme Styles*******/
+
+html {
+	background-image: url(../images/Unknown.jpg);
+	background-size:cover;
+	background-position:80% top;
+	background-repeat: no-repeat;
+}
+
+
+
+		
+		
+	
+
+	
+
 
 	

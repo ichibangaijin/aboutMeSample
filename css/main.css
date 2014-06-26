@@ -1,30 +1,54 @@
+* {
+  outline: solid 1px red; }
+
+/***** Base Styles*******/
+h1 {
+  color: white;
+  font-family: helvetica, sans-serif;
+  font-size: 50px;
+  text-shadow: 0px 0px 50px black; }
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 35px; } }
+
+h2 {
+  color: white;
+  text-shadow: 0px 0px 50px black;
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 1.5; }
+  @media (max-width: 500px) {
+    h2 {
+      font-size: 16px; } }
+
+p {
+  color: white;
+  font-family: arial, sans-serif; }
+
+input {
+  font-size: 16px;
+  border-radius: 3px; }
+
+input[type=button] {
+  width: 150px;
+  height: 40px;
+  color: white;
+  background-color: #0077b3;
+  border-radius: 2px;
+  border: none; }
+  input[type=button]:hover {
+    background-color: #3277b3; }
+
+/***** Layout Styles*******/
 html {
   height: 100%;
   min-height: 100%;
-  background-image: url(../images/Unknown.jpg);
-  background-size: cover;
-  background-position: 80% top;
-  background-repeat: no-repeat; }
-  @media (max-width: 500px) {
-    html {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      height: auto;
-      background-size: cover; } }
+  position: relative; }
 
 header {
   margin-left: 40px;
   margin-top: 20px;
   vertical-align: top; }
-  header img {
-    width: 120px; }
-  header p {
-    position: absolute;
-    right: 20px;
-    top: 25px;
-    color: white;
-    font-family: arial, sans-serif; }
   @media (max-width: 500px) {
     header {
       margin-left: 10px;
@@ -36,98 +60,70 @@ section {
     section {
       margin-left: 10px;
       margin-top: 250px; } }
-  section h1 {
-    font-family: helvetica, sans-serif;
-    font-size: 50px;
-    color: white;
-    margin-top: 90px;
-    margin-bottom: 20px;
-    text-shadow: 0px 0px 50px black;
-    font-weight: 700; }
-    @media (max-width: 500px) {
-      section h1 {
-        font-size: 35px; } }
-  section h3 {
-    color: white;
-    text-shadow: 0px 0px 50px black;
-    font-family: sans-serif;
-    font-size: 20px;
-    width: 500px;
-    line-height: 1.5; }
-    @media (max-width: 500px) {
-      section h3 {
-        font-size: 16px;
-        width: 95%;
-        margin-bottom: 20px; } }
-  section input {
-    display: inline-block;
-    width: 240px;
-    height: 36px;
-    font-size: 16px;
-    margin-right: 10px;
-    margin-top: 20px;
-    border-radius: 3px; }
-    @media (max-width: 500px) {
-      section input {
-        width: 95%;
-        margin-left: 0px;
-        margin-bottom: 10px; }
-        section input .button {
-          margin-left: 0px;
-          width: 95%; } }
-  section p {
-    color: white;
-    margin-top: 40px; }
-    @media (max-width: 500px) {
-      section p {
-        display: inline-block;
-        width: 90%;
-        margin-bottom: 5px;
-        font-size: 14px;
-        margin-top: 0px; } }
-  section div {
-    display: inline-block;
-    position: relative;
-    width: 150px;
-    height: 40px;
-    margin-right: 20px;
-    color: #a19fab; }
-    section div:hover {
-      color: white; }
-    section div i {
-      position: absolute;
-      left: 10px;
-      top: 25px;
-      font-size: 30px; }
-    section div input.links {
-      position: relative;
-      background-color: rgba(0, 0, 0, 0.2);
-      color: gray; }
-      section div input.links:hover {
-        color: white;
-        background-color: rgba(0, 0, 0, 0.4); }
-  section input[type=button] {
-    width: 150px;
-    height: 40px;
-    color: white;
-    background-color: #0077b3;
-    border-radius: 2px;
-    border: none; }
-    section input[type=button]:hover {
-      background-color: #3277b3; }
-  section .email {
-    display: block;
-    width: 500px; }
-    @media (max-width: 500px) {
-      section .email {
-        display: inline-block;
-        width: 95%; } }
 
 footer {
-  color: white;
   position: absolute;
   bottom: 20px;
   right: 20px; }
+
+/***** Module Styles*******/
+img.logo {
+  width: 120px; }
+
+.float-right {
+  display: inline-block;
+  float: right;
+  clear: right;
+  margin-right: 20px;
+  margin-top: 5px; }
+
+.float-left {
+  display: block;
+  clear: left;
+  float: left; }
+
+.no-clear-float-left {
+  display: inline-block;
+  float: left; }
+
+.page-title {
+  margin-top: 150px; }
+
+.page-description {
+  width: 500px;
+  margin-top: 30px; }
+
+.name-text,
+.email-text {
+  margin-right: 10px;
+  display: inline-block;
+  width: 240px;
+  height: 36px; }
   @media (max-width: 500px) {
-    footer {
-      display: none; } }
+    .name-text,
+    .email-text {
+      width: 95%;
+      margin-left: 0px;
+      margin-bottom: 10px; } }
+
+.email-text {
+  margin-top: 10px; }
+
+.join-button {
+  margin-top: 10px;
+  margin-bottom: 20px; }
+
+.facebook,
+.twitter {
+  margin-top: 10px; }
+
+.twitter {
+  margin-left: 10px; }
+
+/***** State Styles*******/
+/***** Theme Styles*******/
+html {
+  background-image: url(../images/Unknown.jpg);
+  background-size: cover;
+  background-position: 80% top;
+  background-repeat: no-repeat; }
