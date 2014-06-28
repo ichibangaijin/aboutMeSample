@@ -85,13 +85,11 @@ img.logo {
 
 .log-in {
   margin-top: 5px;
-  vertical-align: top; }
+  margin-right: 20px; }
 
 .float-right {
   display: inline-block;
-  float: right;
-  clear: right;
-  margin-right: 20px; }
+  float: right; }
 
 .float-left {
   display: block;
