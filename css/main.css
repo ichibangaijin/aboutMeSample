@@ -92,7 +92,7 @@ img.logo {
   float: right; }
 
 .float-left {
-  display: block;
+  display: inline-block;
   clear: left;
   float: left; }
 
