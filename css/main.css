@@ -84,7 +84,8 @@ img.logo {
   width: 120px; }
 
 .log-in {
-  margin-top: 5px; }
+  margin-top: 5px;
+  vertical-align: top; }
 
 .float-right {
   display: inline-block;
