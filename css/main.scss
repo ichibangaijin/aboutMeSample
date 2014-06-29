@@ -78,10 +78,6 @@ html{
 }
 
 
-.main-container{
-	position:static;
-	
-}
 
 
 header {
@@ -99,7 +95,6 @@ section {
 	@media(max-width: 500px){
 		margin-left: 10px;
 		margin-top: 250px;
-		height:500px;
 		}
 	}	
 	
@@ -109,7 +104,6 @@ footer {
 		position:absolute;
 		bottom:20px;
 		right:20px;
-
 	}
 
 
@@ -144,7 +138,6 @@ img.logo{
 
 .page-title {
 	margin-top: 100px;
-	position:relative;
 	@media(max-width: 500px){
 	margin-bottom: 10px;
 	}
@@ -246,10 +239,7 @@ html{
 	background-size:cover;
 	background-position:80% top;
 	background-repeat: no-repeat;
-	@media(max-width: 500px){
-		background-attachment:fixed;
-				
-	}
+	
 }
 
 

@@ -59,9 +59,6 @@ button {
       position: fixed;
       height: 600px; } }
 
-.main-container {
-  position: static; }
-
 header {
   margin-left: 40px;
   padding-top: 20px;
@@ -75,8 +72,7 @@ section {
   @media (max-width: 500px) {
     section {
       margin-left: 10px;
-      margin-top: 250px;
-      height: 500px; } }
+      margin-top: 250px; } }
 
 footer {
   position: absolute;
@@ -105,8 +101,7 @@ img.logo {
   float: left; }
 
 .page-title {
-  margin-top: 100px;
-  position: relative; }
+  margin-top: 100px; }
   @media (max-width: 500px) {
     .page-title {
       margin-bottom: 10px; } }
@@ -189,6 +184,3 @@ html {
   background-size: cover;
   background-position: 80% top;
   background-repeat: no-repeat; }
-  @media (max-width: 500px) {
-    .main-layout {
-      background-attachment: fixed; } }
