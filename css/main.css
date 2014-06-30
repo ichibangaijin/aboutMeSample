@@ -153,19 +153,19 @@ button.border {
   .twitter:hover {
     background-color: rgba(90, 92, 88, 0.7); }
 
-.facebook {
-  margin-left: 20px; }
-  .facebook:before {
-    font-family: 'FontAwesome';
-    content: "\f09a";
-    font-size: 20px;
-    margin-right: 10px; }
-
-.twitter:before {
+.facebook:before {
   font-family: 'FontAwesome';
-  content: "\f099";
+  content: "\f09a";
   font-size: 20px;
   margin-right: 10px; }
+
+.twitter {
+  margin-left: 20px; }
+  .twitter:before {
+    font-family: 'FontAwesome';
+    content: "\f099";
+    font-size: 20px;
+    margin-right: 10px; }
 
 .margin-top-extend {
   margin-top: 30px; }
