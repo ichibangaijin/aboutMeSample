@@ -1,7 +1,4 @@
 * {
-  outline: solid red 1px; }
-
-* {
   box-sizing: border-box; }
 
 /***** Base Styles*******/
@@ -9,7 +6,7 @@
   color: white; }
 
 a {
-  color: lightblue; }
+  color: blue; }
 
 h1, h2, p {
   color: white;
@@ -24,12 +21,13 @@ h1 {
       font-size: 1.5em; } }
 
 h1.jumbo-header {
+  color: gray;
   font-size: 3.5em; }
   @media (max-width: 500px) {
     h1.jumbo-header {
       font-size: 60px; } }
   h1.jumbo-header span {
-    color: red;
+    color: #99180c;
     font-size: 50px; }
 
 h2 {
@@ -75,22 +73,19 @@ button {
   position: absolute;
   top: 0;
   left: 0; }
-  @media (width: 500px) {
-    .main-layout {
-      position: fixed;
-      height: 600px; } }
 
 .main-container {
   width: 60%;
   min-width: 550px;
   height: 100%;
   min-height: 1000px;
-  position: relative;
+  position: static;
   top: 0;
   left: 0; }
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     .main-container {
-      width: 100%; } }
+      width: 100%;
+      min-width: 280px; } }
 
 header {
   margin-left: 40px;
@@ -98,7 +93,7 @@ header {
   vertical-align: top; }
   @media (max-width: 500px) {
     header {
-      margin-left: 10px; } }
+      margin-left: 0px; } }
 
 section {
   margin-left: 40px; }
@@ -121,7 +116,7 @@ footer {
   margin-bottom: 50px;
   margin-top: 50px;
   display: block;
-  width: 88%;
+  width: 95%;
   text-align: center;
   border-top: dotted 2px white;
   border-bottom: dotted 2px white; }
@@ -237,12 +232,16 @@ button.border {
     display: none; } }
 
 .portfolio-box {
-  width: 48%;
+  width: 45%;
   height: 200px;
-  background-color: #17857f;
+  background-color: rgba(23, 133, 127, 0.6);
   display: inline-block;
   margin-top: 20px;
   margin-right: 1%; }
+  @media (max-width: 500px) {
+    .portfolio-box {
+      display: block;
+      width: 100%; } }
 
 /***** State Styles*******/
 /***** Theme Styles*******/
@@ -252,6 +251,7 @@ html {
 .main-layout {
   background-image: url(../images/japantemple.jpg);
   background-size: cover;
+  background-attachment: fixed;
   background-position: 80% top;
   background-repeat: no-repeat;
   z-index: -1; }
