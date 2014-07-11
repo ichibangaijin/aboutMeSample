@@ -144,7 +144,7 @@ header {
 section {
 	margin-left:40px;
 	@media(max-width: 500px){
-		margin-left: 10px;
+		margin-left: 0px;
 		margin-top: 250px;
 		}
 	}	
@@ -308,6 +308,13 @@ button.border {
 	margin-top: 30px;
 }
 	
+
+
+
+
+
+
+/***** State Styles*******/
 .hide {
 	@media(max-width:500px){
 		display:none;
@@ -315,22 +322,42 @@ button.border {
 }
 
 .portfolio-box{
+	position:relative;
 	width:45%;
 	height:200px;
-	background-color: rgba($color-box, .6ffj);
+	background-color: rgba($color-box, .6);
 	display:inline-block;
 	margin-top: 20px;
 	margin-right:1%;
 	@media(max-width: 500px){
 		display:block;
 		width:100%;
+		margin-left:0px
 	}
 
 }
 
 
-/***** State Styles*******/
+.hidden-box{
+	transition: opacity 1.2s, height 1.2s ease;
+	position:absolute;
+	opacity:0;
+	width:100%;
+	height:0;
+	bottom:0;
+	background-color:rgba(black, 0.8);
+	@media(max-width: 500px){
+		width:100%;
+	}
+}
 
+
+.portfolio-box:hover .hidden-box{
+	transition: opacity 3s, height 1s ease;
+	height: 200px;
+	opacity: 1;
+
+}
 /***** Theme Styles*******/
 
 html{
